@@ -2,7 +2,9 @@
 // │ Your code here! │	
 // └─────────────────┘
 
-
+function isAdmin(user) {
+    return user.userRole === 'ADMIN'
+}
 
 // ┌─────────────────────────────────────┐
 // │ Do not modify code below this line. │
