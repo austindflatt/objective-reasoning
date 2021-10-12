@@ -6,6 +6,14 @@ function isAdmin(user) {
     return user.userRole === 'ADMIN'
 }
 
+function getEmail(user) {
+    return (user.firstName + '.' + user.lastName + '@codeimmersives.com').toLowerCase()
+}
+
+function getPlaylistLength(playlist) {
+    return playlist.songs.length;
+}
+
 // ┌─────────────────────────────────────┐
 // │ Do not modify code below this line. │
 // └─────────────────────────────────────┘
