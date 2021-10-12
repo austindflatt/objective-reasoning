@@ -14,6 +14,26 @@ function getPlaylistLength(playlist) {
     return playlist.songs.length;
 }
 
+function getHardestHomework(homework) {
+    let hardestWork = "";
+    let lowest = 100;
+    for (const item of homework){
+    if (item.averageScore < lowest){
+        hardestWork = item.name;
+        lowest = item.averageScore;
+        }
+    }
+    return hardestWork
+}
+
+function createPhonebook(name, number) {
+    const phonebook = {};
+    for (let i = 0; i < name.length; i++){
+        phonebook [name[i]] = number[i];
+    }
+    return phonebook
+}
+
 // ┌─────────────────────────────────────┐
 // │ Do not modify code below this line. │
 // └─────────────────────────────────────┘
